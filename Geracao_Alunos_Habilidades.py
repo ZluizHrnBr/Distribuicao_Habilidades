@@ -26,7 +26,7 @@ def distribuir_habilidades_V_2(desenvolvedores, habilidades):
     for aluno in desenvolvedores.keys():
         habilidades_aluno = [0] * len(habilidades)  # Inicializa todas as habilidades com 0
         habilidade_selecionada = random.randint(0, len(habilidades) - 1)  # Escolhendo 1 habilidade de modo aleatória
-        habilidades_aluno[habilidade_selecionada] = random.randint(1, 3)  # Atribui um nível entre 1 e 3 para a habilidade escolhida
+        habilidades_aluno[habilidade_selecionada] = 1  # Atribui um nível entre 1 e 3 para a habilidade escolhida
 
         matriz_habilidades[aluno] = habilidades_aluno  # Adiciona o aluno e suas habilidades ao dicionário
 
